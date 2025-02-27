@@ -1,0 +1,27 @@
+// Edit default background colors
+$info: #fc761d;
+$warning: #33ff88;
+$light: #ffe865;
+
+// Edit Margin spacing 
+$spacer: 1rem; // Base spacing unit
+$spacers: (
+    5: $spacer * 4
+);
+
+// Edit Font sizes and family
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$variable-prefix:             bs- !default; // Deprecated in v5.2.0 for the shorter `$prefix`
+$prefix:                      $variable-prefix !default;
+$font-family-sans-serif:      "Times New Roman", Times, serif !default;
+$font-family-base:            var(--#{$prefix}font-sans-serif) !default;
+$font-weight-normal:          400 !default;
+$font-weight-base:            $font-weight-normal !default;
+$h1-font-size:                $font-size-base * 5 !default;
+$h2-font-size:                $font-size-base * 2.5 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
